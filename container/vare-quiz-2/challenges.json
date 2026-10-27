@@ -1,0 +1,63 @@
+[
+  {
+    "id": "recon",
+    "name": "Service Inventory",
+    "category": "Reconnaissance",
+    "value": 200,
+    "marks": 2,
+    "minutes": 10,
+    "image": "vare-quiz2-recon:1.0",
+    "port": 5000,
+    "ctype": "tcp",
+    "flag": "VARE{enumeration_beyond_default_ports}",
+    "hint": "Inspect HTTP metadata with Nmap default scripts or an appropriate HTTP script. Use the port shown for your instance.",
+    "files": [],
+    "description": "Your lab inventory is missing one service. Launch your instance and use Nmap against ONLY the allocated host and port. Identify the service and inspect its metadata to recover the inventory token. Submit the complete VARE{...} flag and keep your command/output for the evidence document. The plugin supplies the reachable port; this task tests service enumeration, not guessing a hidden port."
+  },
+  {
+    "id": "web",
+    "name": "Backup Left Behind",
+    "category": "Manual Web Assessment",
+    "value": 300,
+    "marks": 3,
+    "minutes": 18,
+    "image": "vare-quiz2-web:1.0",
+    "port": 8080,
+    "ctype": "web",
+    "flag": "VARE{backups_belong_outside_webroot}",
+    "hint": "Check the standard crawler instructions. A crawler exclusion is not access control. Inspect any exposed deployment files.",
+    "files": [],
+    "description": "The teaching portal is live, but an internal deployment artifact may have been published accidentally. Launch the website. Use manual browsing or curl to find and verify an information exposure, then recover the internal assessment token. No login bypass, brute force, directory brute forcing or automated vulnerability scanner is needed. Keep the affected URL, unauthenticated access evidence, impact and remediation for your write-up. Submit the complete VARE{...} flag."
+  },
+  {
+    "id": "redis",
+    "name": "Internal Cache",
+    "category": "Manual Infrastructure Assessment",
+    "value": 300,
+    "marks": 3,
+    "minutes": 18,
+    "image": "vare-quiz2-redis:1.0",
+    "port": 6379,
+    "ctype": "tcp",
+    "flag": "VARE{no_password_no_privacy}",
+    "hint": "Use the supplied client reference. Test access without credentials, list available keys and inspect the internal assessment record.",
+    "files": [
+      "REDIS_QUICK_REFERENCE.md"
+    ],
+    "description": "An infrastructure data service has been exposed outside its intended trust boundary. Launch your instance, identify its service, then use its native client to check whether internal data is readable without authentication. The attached command reference supplies unfamiliar syntax. Only read operations are needed. Keep the endpoint, manual evidence, impact and remediation for your write-up. Submit the complete VARE{...} flag."
+  },
+  {
+    "id": "trail",
+    "name": "Evidence Trail",
+    "category": "General Skills",
+    "value": 200,
+    "marks": 2,
+    "minutes": 9,
+    "flag": "VARE{follow_the_evidence_not_the_extension}",
+    "hint": "Search for export-agent or checkpoint, then use the encoding named in the matching line.",
+    "files": [
+      "evidence-trail.zip"
+    ],
+    "description": "The attached log contains one export-agent checkpoint among normal activity. Find that checkpoint, identify the payload encoding and recover the complete VARE{...} flag. Include the search and decoding steps in your evidence document. This challenge runs locally and needs no container."
+  }
+]

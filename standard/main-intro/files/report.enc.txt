@@ -1,0 +1,12 @@
+LAB MESSAGE INTERCEPT
+
+A training application encrypts a UTF-8 message with repeating-key XOR:
+    ciphertext[i] = plaintext[i] XOR key[i % 8]
+
+The secret key is exactly 8 bytes long. Every report starts with these exact
+8 ASCII bytes (including the final space): REPORT: 
+
+The ciphertext below is hexadecimal; decode the hex before applying XOR.
+Recover the message and submit the CTF{...} flag inside it.
+
+ciphertext_hex = 1e041204170d0e120f2d2338362b5b5d21612f2e362a55552961302e263642573e242665651f58532b7b6208111f4f59222e35251a295853252f362e3d2d6b503e24232036064c5d3e3c48

@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "name": "Sanity Check",
+    "description": "Submit the flag in the format SCSS{...}.",
+    "category": "Misc",
+    "value": 1,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{sanity_check}",
+    "files": [
+      "files/sanity.md"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Out of Sight",
+    "description": "Extract `workspace.zip`. Find the result note inside the hidden audit directory.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Linux",
+    "value": 100,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{hidden_paths_found}",
+    "files": [
+      "files/workspace.zip"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "The Right Event",
+    "description": "In `events.csv`, recover the token for service `backup-agent` with status `SUCCESS`.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Linux",
+    "value": 100,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{filter_before_reading}",
+    "files": [
+      "files/events.csv"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Reverse the Recipe",
+    "description": "Recover the original plaintext from `message.txt`. The sender recorded the encoding order.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Crypto",
+    "value": 150,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{layers_are_not_encryption}",
+    "files": [
+      "files/message.txt"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "A Misleading Photo",
+    "description": "The supplied `holiday.jpg` will not open as an image. Determine its real format and recover its contents.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Forensics",
+    "value": 150,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{trust_magic_not_names}",
+    "files": [
+      "files/holiday.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sensor Memory",
+    "description": "A synthetic sensor-memory dump contains a printable diagnostic flag. Extract it without executing the file.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Forensics",
+    "value": 100,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{printable_evidence}",
+    "files": [
+      "files/sensor.dat"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Parcel Inside a Parcel",
+    "description": "Recover the flag from `delivery.zip`. Identify each extracted file before choosing the next tool.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Forensics",
+    "value": 200,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{unpack_identify_repeat}",
+    "files": [
+      "files/delivery.zip"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Who Can Read It?",
+    "description": "Analyze the permission snapshot in `permissions.txt` and submit the correct option.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Linux",
+    "value": 150,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{b}",
+    "files": [
+      "files/permissions.txt"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Failed, Then Successful",
+    "description": "In `auth.log`, find the source with at least five failures followed by a successful login for the same user. Submit `SCSS{source_IP_username}`. Sort by timestamp if needed.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Forensics",
+    "value": 200,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{203.0.113.77_admin}",
+    "files": [
+      "files/auth.log"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Follow the Portal",
+    "description": "Using `network.txt`, identify the portal server IP and destination port for HTTPS. Submit `SCSS{IP_port}`.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Network",
+    "value": 150,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{192.0.2.25_443}",
+    "files": [
+      "files/network.txt"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Verify Before Trusting",
+    "description": "Extract `configs.zip`. The approved file has SHA-256 `ce066393e2e00862a06ead85ba0fd49114179a3ecb95fc78746bd3f33b038566`. Find its filename and submit `SCSS{filename}`, including the extension.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Forensics",
+    "value": 200,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{config-14.txt}",
+    "files": [
+      "files/configs.zip"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Choose the Response Team",
+    "description": "An organization detects suspicious logins. It needs someone to triage alerts, correlate logs, and escalate incidents. Which role fits best?\n\nA. SOC analyst\n\nB. UI designer\n\nC. Sales engineer\n\nD. Hardware assembler\n\nSubmit `SCSS{letter}` using a lowercase letter.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Misc",
+    "value": 100,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{a}",
+    "files": []
+  },
+  {
+    "id": 13,
+    "name": "What Did We Lose?",
+    "description": "An attacker changes invoice bank details, while the system remains online and no information is disclosed. Which CIA-triad property is directly violated?\n\nA. Availability\n\nB. Integrity\n\nC. Confidentiality\n\nSubmit `SCSS{letter}` using a lowercase letter.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Misc",
+    "value": 100,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{b}",
+    "files": []
+  },
+  {
+    "id": 14,
+    "name": "Same Key, Every Byte",
+    "description": "A classroom application encrypts reports with a repeating 8-byte XOR key.\nYou intercepted one report and know its standard opening text.\n\nDownload `report.enc.txt`, recover the plaintext, and submit the flag inside it.\nThe attachment gives the encryption rule and the exact known prefix.\nPython 3 or any equivalent local tool is allowed; no brute force is necessary.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Crypto",
+    "value": 200,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{known_plaintext_breaks_xor}",
+    "files": [
+      "files/report.enc.txt"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "The Cube That Never Wrapped",
+    "description": "A developer encrypted a short flag using textbook RSA without padding.\nDownload `public-key.json`, containing the public modulus `n`, exponent `e`, and ciphertext `c`.\n\nThe flag was converted from UTF-8 bytes into a big-endian integer `m`, then `c = m^e mod n` with `e = 3`. The developer chose a message so short that `m^3 < n`. Use that fact to recover the message. You do not need to factor `n` or recover the private key. Convert the recovered integer back to big-endian bytes and decode as UTF-8. Use exact integer arithmetic; ordinary floating-point cube roots can round.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+    "category": "Crypto",
+    "value": 300,
+    "type": "standard",
+    "state": "hidden",
+    "flag": "SCSS{small_e_needs_padding}",
+    "files": [
+      "files/public-key.json"
+    ]
+  }
+]

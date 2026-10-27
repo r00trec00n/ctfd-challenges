@@ -1,0 +1,6 @@
+*.sql
+*.sql.gz
+.env
+__pycache__/
+*.pyc
+backups/

@@ -1,0 +1,94 @@
+{
+  "name": "vare-quiz2",
+  "services": {
+    "recon": {
+      "image": "vare-quiz2-recon:1.0",
+      "build": {
+        "context": "./challenges/recon"
+      },
+      "ports": [
+        "${LAB_BIND_IP:-127.0.0.1}:41073:5000"
+      ],
+      "restart": "unless-stopped",
+      "read_only": true,
+      "tmpfs": [
+        "/tmp:rw,noexec,nosuid,size=32m,mode=1777"
+      ],
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "pids_limit": 64,
+      "mem_limit": "128m",
+      "cpus": 0.5,
+      "networks": [
+        "recon_lab"
+      ]
+    },
+    "web": {
+      "image": "vare-quiz2-web:1.0",
+      "build": {
+        "context": "./challenges/web"
+      },
+      "ports": [
+        "${LAB_BIND_IP:-127.0.0.1}:42080:8080"
+      ],
+      "restart": "unless-stopped",
+      "read_only": true,
+      "tmpfs": [
+        "/tmp:rw,noexec,nosuid,size=32m,mode=1777"
+      ],
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "pids_limit": 64,
+      "mem_limit": "128m",
+      "cpus": 0.5,
+      "networks": [
+        "web_lab"
+      ]
+    },
+    "redis": {
+      "image": "vare-quiz2-redis:1.0",
+      "build": {
+        "context": "./challenges/redis"
+      },
+      "ports": [
+        "${LAB_BIND_IP:-127.0.0.1}:43079:6379"
+      ],
+      "restart": "unless-stopped",
+      "read_only": true,
+      "tmpfs": [
+        "/tmp:rw,noexec,nosuid,size=32m,mode=1777"
+      ],
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "pids_limit": 64,
+      "mem_limit": "128m",
+      "cpus": 0.5,
+      "networks": [
+        "redis_lab"
+      ]
+    }
+  },
+  "networks": {
+    "recon_lab": {
+      "driver": "bridge"
+    },
+    "web_lab": {
+      "driver": "bridge"
+    },
+    "redis_lab": {
+      "driver": "bridge"
+    }
+  }
+}
