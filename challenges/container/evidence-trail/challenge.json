@@ -5,6 +5,7 @@
   "value": 200,
   "flag": "VARE{follow_the_evidence_not_the_extension}",
   "files": [
-    "student-files/evidence-trail.zip"
-  ]
+    "files/evidence-trail.zip"
+  ],
+  "type": "container"
 }

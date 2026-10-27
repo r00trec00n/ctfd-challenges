@@ -5,9 +5,10 @@
   "value": 300,
   "flag": "VARE{no_password_no_privacy}",
   "files": [
-    "student-files/REDIS_QUICK_REFERENCE.md"
+    "files/REDIS_QUICK_REFERENCE.md"
   ],
   "image": "vare-quiz2-redis:1.0",
   "port": 6379,
-  "ctype": "tcp"
+  "ctype": "tcp",
+  "type": "container"
 }

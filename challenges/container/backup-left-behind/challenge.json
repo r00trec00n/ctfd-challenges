@@ -7,5 +7,6 @@
   "files": [],
   "image": "vare-quiz2-web:1.0",
   "port": 8080,
-  "ctype": "web"
+  "ctype": "web",
+  "type": "container"
 }

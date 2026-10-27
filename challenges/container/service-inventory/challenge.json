@@ -7,5 +7,6 @@
   "files": [],
   "image": "vare-quiz2-recon:1.0",
   "port": 5000,
-  "ctype": "tcp"
+  "ctype": "tcp",
+  "type": "container"
 }
