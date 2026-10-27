@@ -1,6 +1,0 @@
-DNS response: portal.lab.test. 300 IN A 192.0.2.25
-TCP connections:
-192.0.2.50:51001 -> 192.0.2.53:53
-192.0.2.50:51002 -> 192.0.2.25:443
-192.0.2.50:51003 -> 192.0.2.90:22
-The portal uses the conventional HTTPS TCP port.

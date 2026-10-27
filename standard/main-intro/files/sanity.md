@@ -1,1 +1,0 @@
-SCSS{sanity_check}
