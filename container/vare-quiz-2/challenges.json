@@ -42,7 +42,7 @@
     "flag": "VARE{no_password_no_privacy}",
     "hint": "Use the supplied client reference. Test access without credentials, list available keys and inspect the internal assessment record.",
     "files": [
-      "REDIS_QUICK_REFERENCE.md"
+      "student-files/REDIS_QUICK_REFERENCE.md"
     ],
     "description": "An infrastructure data service has been exposed outside its intended trust boundary. Launch your instance, identify its service, then use its native client to check whether internal data is readable without authentication. The attached command reference supplies unfamiliar syntax. Only read operations are needed. Keep the endpoint, manual evidence, impact and remediation for your write-up. Submit the complete VARE{...} flag."
   },
@@ -56,7 +56,7 @@
     "flag": "VARE{follow_the_evidence_not_the_extension}",
     "hint": "Search for export-agent or checkpoint, then use the encoding named in the matching line.",
     "files": [
-      "evidence-trail.zip"
+      "student-files/evidence-trail.zip"
     ],
     "description": "The attached log contains one export-agent checkpoint among normal activity. Find that checkpoint, identify the payload encoding and recover the complete VARE{...} flag. Include the search and decoding steps in your evidence document. This challenge runs locally and needs no container."
   }
