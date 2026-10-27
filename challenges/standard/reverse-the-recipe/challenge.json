@@ -1,0 +1,11 @@
+{
+  "name": "Reverse the Recipe",
+  "category": "Crypto",
+  "description": "Recover the original plaintext from `message.txt`. The sender recorded the encoding order.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 150,
+  "type": "standard",
+  "flag": "SCSS{layers_are_not_encryption}",
+  "files": [
+    "files/message.txt"
+  ]
+}

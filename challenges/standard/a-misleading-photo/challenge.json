@@ -1,0 +1,11 @@
+{
+  "name": "A Misleading Photo",
+  "category": "Forensics",
+  "description": "The supplied `holiday.jpg` will not open as an image. Determine its real format and recover its contents.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 150,
+  "type": "standard",
+  "flag": "SCSS{trust_magic_not_names}",
+  "files": [
+    "files/holiday.jpg"
+  ]
+}

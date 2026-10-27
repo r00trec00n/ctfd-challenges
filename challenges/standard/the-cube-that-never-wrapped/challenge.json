@@ -1,0 +1,11 @@
+{
+  "name": "The Cube That Never Wrapped",
+  "category": "Crypto",
+  "description": "A developer encrypted a short flag using textbook RSA without padding.\nDownload `public-key.json`, containing the public modulus `n`, exponent `e`, and ciphertext `c`.\n\nThe flag was converted from UTF-8 bytes into a big-endian integer `m`, then `c = m^e mod n` with `e = 3`. The developer chose a message so short that `m^3 < n`. Use that fact to recover the message. You do not need to factor `n` or recover the private key. Convert the recovered integer back to big-endian bytes and decode as UTF-8. Use exact integer arithmetic; ordinary floating-point cube roots can round.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 300,
+  "type": "standard",
+  "flag": "SCSS{small_e_needs_padding}",
+  "files": [
+    "files/public-key.json"
+  ]
+}

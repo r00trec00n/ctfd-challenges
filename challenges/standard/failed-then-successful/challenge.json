@@ -1,0 +1,11 @@
+{
+  "name": "Failed, Then Successful",
+  "category": "Forensics",
+  "description": "In `auth.log`, find the source with at least five failures followed by a successful login for the same user. Submit `SCSS{source_IP_username}`. Sort by timestamp if needed.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 200,
+  "type": "standard",
+  "flag": "SCSS{203.0.113.77_admin}",
+  "files": [
+    "files/auth.log"
+  ]
+}

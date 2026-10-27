@@ -1,0 +1,10 @@
+{
+  "name": "Evidence Trail",
+  "category": "General Skills",
+  "description": "The attached log contains one export-agent checkpoint among normal activity. Find that checkpoint, identify the payload encoding and recover the complete VARE{...} flag. Include the search and decoding steps in your evidence document. This challenge runs locally and needs no container.",
+  "value": 200,
+  "flag": "VARE{follow_the_evidence_not_the_extension}",
+  "files": [
+    "student-files/evidence-trail.zip"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Out of Sight",
+  "category": "Linux",
+  "description": "Extract `workspace.zip`. Find the result note inside the hidden audit directory.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 100,
+  "type": "standard",
+  "flag": "SCSS{hidden_paths_found}",
+  "files": [
+    "files/workspace.zip"
+  ]
+}

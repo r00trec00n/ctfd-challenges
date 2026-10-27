@@ -1,0 +1,11 @@
+{
+  "name": "Backup Left Behind",
+  "category": "Manual Web Assessment",
+  "description": "The teaching portal is live, but an internal deployment artifact may have been published accidentally. Launch the website. Use manual browsing or curl to find and verify an information exposure, then recover the internal assessment token. No login bypass, brute force, directory brute forcing or automated vulnerability scanner is needed. Keep the affected URL, unauthenticated access evidence, impact and remediation for your write-up. Submit the complete VARE{...} flag.",
+  "value": 300,
+  "flag": "VARE{backups_belong_outside_webroot}",
+  "files": [],
+  "image": "vare-quiz2-web:1.0",
+  "port": 8080,
+  "ctype": "web"
+}

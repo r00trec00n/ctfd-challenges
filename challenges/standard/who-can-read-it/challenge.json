@@ -1,0 +1,11 @@
+{
+  "name": "Who Can Read It?",
+  "category": "Linux",
+  "description": "Analyze the permission snapshot in `permissions.txt` and submit the correct option.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 150,
+  "type": "standard",
+  "flag": "SCSS{b}",
+  "files": [
+    "files/permissions.txt"
+  ]
+}

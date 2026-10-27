@@ -1,0 +1,11 @@
+{
+  "name": "Same Key, Every Byte",
+  "category": "Crypto",
+  "description": "A classroom application encrypts reports with a repeating 8-byte XOR key.\nYou intercepted one report and know its standard opening text.\n\nDownload `report.enc.txt`, recover the plaintext, and submit the flag inside it.\nThe attachment gives the encryption rule and the exact known prefix.\nPython 3 or any equivalent local tool is allowed; no brute force is necessary.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 200,
+  "type": "standard",
+  "flag": "SCSS{known_plaintext_breaks_xor}",
+  "files": [
+    "files/report.enc.txt"
+  ]
+}

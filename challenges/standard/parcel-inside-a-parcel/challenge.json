@@ -1,0 +1,11 @@
+{
+  "name": "Parcel Inside a Parcel",
+  "category": "Forensics",
+  "description": "Recover the flag from `delivery.zip`. Identify each extracted file before choosing the next tool.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 200,
+  "type": "standard",
+  "flag": "SCSS{unpack_identify_repeat}",
+  "files": [
+    "files/delivery.zip"
+  ]
+}

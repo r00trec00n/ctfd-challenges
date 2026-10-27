@@ -1,0 +1,11 @@
+{
+  "name": "Follow the Portal",
+  "category": "Network",
+  "description": "Using `network.txt`, identify the portal server IP and destination port for HTTPS. Submit `SCSS{IP_port}`.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 150,
+  "type": "standard",
+  "flag": "SCSS{192.0.2.25_443}",
+  "files": [
+    "files/network.txt"
+  ]
+}

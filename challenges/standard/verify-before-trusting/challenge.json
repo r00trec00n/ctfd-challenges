@@ -1,0 +1,11 @@
+{
+  "name": "Verify Before Trusting",
+  "category": "Forensics",
+  "description": "Extract `configs.zip`. The approved file has SHA-256 `ce066393e2e00862a06ead85ba0fd49114179a3ecb95fc78746bd3f33b038566`. Find its filename and submit `SCSS{filename}`, including the extension.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 200,
+  "type": "standard",
+  "flag": "SCSS{config-14.txt}",
+  "files": [
+    "files/configs.zip"
+  ]
+}

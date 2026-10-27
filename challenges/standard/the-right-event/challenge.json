@@ -1,0 +1,11 @@
+{
+  "name": "The Right Event",
+  "category": "Linux",
+  "description": "In `events.csv`, recover the token for service `backup-agent` with status `SUCCESS`.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 100,
+  "type": "standard",
+  "flag": "SCSS{filter_before_reading}",
+  "files": [
+    "files/events.csv"
+  ]
+}

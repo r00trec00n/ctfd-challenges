@@ -1,0 +1,9 @@
+{
+  "name": "What Did We Lose?",
+  "category": "Misc",
+  "description": "An attacker changes invoice bank details, while the system remains online and no information is disclosed. Which CIA-triad property is directly violated?\n\nA. Availability\n\nB. Integrity\n\nC. Confidentiality\n\nSubmit `SCSS{letter}` using a lowercase letter.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 100,
+  "type": "standard",
+  "flag": "SCSS{b}",
+  "files": []
+}

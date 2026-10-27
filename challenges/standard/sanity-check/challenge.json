@@ -1,0 +1,11 @@
+{
+  "name": "Sanity Check",
+  "category": "Misc",
+  "description": "Submit the flag in the format SCSS{...}.",
+  "value": 1,
+  "type": "standard",
+  "flag": "SCSS{sanity_check}",
+  "files": [
+    "files/sanity.md"
+  ]
+}

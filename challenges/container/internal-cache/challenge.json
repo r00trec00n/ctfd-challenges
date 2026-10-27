@@ -1,0 +1,13 @@
+{
+  "name": "Internal Cache",
+  "category": "Manual Infrastructure Assessment",
+  "description": "An infrastructure data service has been exposed outside its intended trust boundary. Launch your instance, identify its service, then use its native client to check whether internal data is readable without authentication. The attached command reference supplies unfamiliar syntax. Only read operations are needed. Keep the endpoint, manual evidence, impact and remediation for your write-up. Submit the complete VARE{...} flag.",
+  "value": 300,
+  "flag": "VARE{no_password_no_privacy}",
+  "files": [
+    "student-files/REDIS_QUICK_REFERENCE.md"
+  ],
+  "image": "vare-quiz2-redis:1.0",
+  "port": 6379,
+  "ctype": "tcp"
+}

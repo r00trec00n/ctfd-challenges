@@ -1,0 +1,9 @@
+{
+  "name": "Choose the Response Team",
+  "category": "Misc",
+  "description": "An organization detects suspicious logins. It needs someone to triage alerts, correlate logs, and escalate incidents. Which role fits best?\n\nA. SOC analyst\n\nB. UI designer\n\nC. Sales engineer\n\nD. Hardware assembler\n\nSubmit `SCSS{letter}` using a lowercase letter.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 100,
+  "type": "standard",
+  "flag": "SCSS{a}",
+  "files": []
+}

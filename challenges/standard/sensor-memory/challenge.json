@@ -1,0 +1,11 @@
+{
+  "name": "Sensor Memory",
+  "category": "Forensics",
+  "description": "A synthetic sensor-memory dump contains a printable diagnostic flag. Extract it without executing the file.\n\nSubmit exactly one flag in `SCSS{...}` format. Flags are case-sensitive.",
+  "value": 100,
+  "type": "standard",
+  "flag": "SCSS{printable_evidence}",
+  "files": [
+    "files/sensor.dat"
+  ]
+}

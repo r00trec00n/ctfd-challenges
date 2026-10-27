@@ -1,0 +1,11 @@
+{
+  "name": "Service Inventory",
+  "category": "Reconnaissance",
+  "description": "Your lab inventory is missing one service. Launch your instance and use Nmap against ONLY the allocated host and port. Identify the service and inspect its metadata to recover the inventory token. Submit the complete VARE{...} flag and keep your command/output for the evidence document. The plugin supplies the reachable port; this task tests service enumeration, not guessing a hidden port.",
+  "value": 200,
+  "flag": "VARE{enumeration_beyond_default_ports}",
+  "files": [],
+  "image": "vare-quiz2-recon:1.0",
+  "port": 5000,
+  "ctype": "tcp"
+}
